@@ -19,6 +19,7 @@ const skills = [
     category: 'Frameworks & Libraries',
     items: [
       { name: 'React.js', icon: '⚛️' },
+      { name: 'Next.js', icon:'🅽'},
       { name: 'ASP.NET Core', icon: '🟣' },
       { name: 'Bootstrap', icon: '🎨' },
       { name: 'Expo', icon: '📱' },

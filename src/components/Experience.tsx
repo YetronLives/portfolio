@@ -16,6 +16,17 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     company: 'GoDaddy',
+    role: 'Software Development Engineer',
+    period: 'January 2025 - Present',
+    description: [
+      'Implemented backend services in Go (GET, POST, PATCH), reducing ticket processing time by 70% and ensuring reliable data access for internal stakeholders',
+      'Increased service reliability by developing unit tests with Mockery, achieving 95%+ test coverage for Lambda business logic',
+    ],
+    technologies: ['GoLang', 'AWS Lambda', 'CDK', 'C#', 'DynamoDB', 'Git', 'AWS DynamoDB', 'Claude Code'],
+    logo: '/images/logos/godaddy.png'
+  },
+  {
+    company: 'GoDaddy',
     role: 'Software Development Engineer Intern',
     period: 'Summer 2025',
     description: [

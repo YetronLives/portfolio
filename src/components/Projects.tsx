@@ -15,6 +15,14 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'Metron',
+    description: 'App that allows users to manage their finance',
+    image: '/images/metron.png',
+    technologies: ['Next.js', 'Typescript', 'Node.js', 'Supabase', 'ChatGPT 4o Mini', 'Vercel'],
+    link: 'https://github.com/YetronLives/Metron',
+    demo: 'https://metronfinances.vercel.app/'
+  },
+  {
     title: 'ColorStack at KSU',
     description: 'Using React.js to develop a website for my college\'s ColorStack Chapter to provide easy access to resources and information.',
     image: '/images/ColorstackAtKSU.jpg',

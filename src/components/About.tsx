@@ -94,7 +94,7 @@ export default function About() {
           <div className={styles.story}>
             <h3 className={styles.subtitle}>My Journey</h3>
             <p className={styles.text}>
-              I&apos;m a Software Engineer at GoDaddy with a Bachelor of Science in Software Engineering from Kennesaw State University and a passion for building impactful solutions. 
+              I&apos;m a Software Development Engineer I at GoDaddy with a Bachelor of Science in Software Engineering from Kennesaw State University and a passion for building impactful solutions. 
               My journey in tech began with a curiosity about how things work, which led me to explore various programming languages and technologies.
             </p>
             <p className={styles.text}>

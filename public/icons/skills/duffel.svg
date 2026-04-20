@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+  <!-- Stylized suitcase / booking stack — represents travel-booking APIs (Duffel). Monochrome for theme filter. -->
+  <path
+    fill="#000000"
+    fill-rule="evenodd"
+    d="M9 5h6l1 2h3a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3l1-2Zm1.2 2 .6-1h2.4l.6 1H10.2ZM7 11v8h10v-8H7Zm2 2h6v2H9v-2Z"
+  />
+</svg>

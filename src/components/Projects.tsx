@@ -15,6 +15,23 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'Exposr',
+    description:
+      'iOS and Android travel app for verified visits, travel stats, and social features—follows, groups, and place-tagged posts—plus trip planning with flight search via providers such as Amadeus and Duffel. Includes Metro, a floating AI assistant for on-the-go help. Supabase for auth, data, and storage; push via Expo among other integrations.',
+    image: '/images/exposr.png',
+    technologies: [
+      'Expo',
+      'React Native',
+      'TypeScript',
+      'Supabase',
+      'Amadeus',
+      'Duffel API',
+      'AI (Metro)',
+    ],
+    link: 'https://github.com/YetronLives/MetronXposure',
+    demo: 'https://exposr-dot-com.vercel.app/',
+  },
+  {
     title: 'Metron',
     description: 'App that allows users to manage their finance',
     image: '/images/metron.png',

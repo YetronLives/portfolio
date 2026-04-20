@@ -1,62 +1,63 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 import styles from './Skills.module.css';
 
-const skills = [
+interface SkillItem {
+  name: string;
+  icon: string;
+  /** Official logo with brand colors (skip invert filter on dark UI) */
+  brand?: boolean;
+}
+
+interface SkillCategory {
+  category: string;
+  items: SkillItem[];
+}
+
+const skills: SkillCategory[] = [
   {
-    category: 'Programming Languages',
+    category: 'Languages & markup',
     items: [
-      { name: 'Java', icon: '☕' },
-      { name: 'C#', icon: '🎯' },
-      { name: 'Python', icon: '🐍' },
-      { name: 'TypeScript', icon: '📘' },
-      { name: 'HTML/CSS', icon: '🌐' },
-      { name: 'Assembly', icon: '⚙️' },
+      { name: 'TypeScript', icon: '/icons/skills/typescript.svg' },
+      { name: 'JavaScript', icon: '/icons/skills/javascript.svg' },
+      { name: 'C#', icon: '/icons/skills/csharp.svg' },
+      { name: 'HTML5', icon: '/icons/skills/html5.svg' },
+      { name: 'CSS', icon: '/icons/skills/css3.svg' },
     ],
   },
   {
-    category: 'Frameworks & Libraries',
+    category: 'Apps & frameworks',
     items: [
-      { name: 'React.js', icon: '⚛️' },
-      { name: 'Next.js', icon:'🅽'},
-      { name: 'ASP.NET Core', icon: '🟣' },
-      { name: 'Bootstrap', icon: '🎨' },
-      { name: 'Expo', icon: '📱' },
+      { name: 'React', icon: '/icons/skills/react.svg' },
+      { name: 'Next.js', icon: '/icons/skills/nextdotjs.svg' },
+      { name: 'React Native', icon: '/icons/skills/reactnative.svg', brand: true },
+      { name: 'Expo', icon: '/icons/skills/expo.svg' },
+      { name: 'Node.js', icon: '/icons/skills/nodedotjs.svg' },
+      { name: 'ASP.NET', icon: '/icons/skills/dotnet.svg' },
     ],
   },
   {
-    category: 'Databases & Cloud',
+    category: 'Data & backend services',
     items: [
-      { name: 'MongoDB', icon: '🍃' },
-      { name: 'SQL', icon: '🗄️' },
-      { name: 'AWS', icon: '☁️' },
-      { name: 'Terraform', icon: '🏗️' },
+      { name: 'Supabase', icon: '/icons/skills/supabase.svg' },
+      { name: 'MongoDB', icon: '/icons/skills/mongodb.svg' },
+      {
+        name: 'Entity Framework',
+        icon: '/icons/skills/microsoftsqlserver.svg',
+      },
     ],
   },
   {
-    category: 'Development Tools',
+    category: 'Deploy, APIs & tooling',
     items: [
-      { name: 'VS Code', icon: '💻' },
-      { name: 'IntelliJ', icon: '🛠️' },
-      { name: 'Rider', icon: '🚀' },
-      { name: 'Git', icon: '📦' },
-      { name: 'GitHub', icon: '🐙' },
-      { name: 'GitLab', icon: '🦊' },
-    ],
-  },
-  {
-    category: 'Testing & Monitoring',
-    items: [
-      { name: 'Postman', icon: '📬' },
-      { name: 'Bruno', icon: '🧪' },
-      { name: 'Datadog', icon: '📊' },
-    ],
-  },
-  {
-    category: 'Design & Collaboration',
-    items: [
-      { name: 'Figma', icon: '🎨' },
+      { name: 'Vercel', icon: '/icons/skills/vercel.svg' },
+      { name: 'OpenAI API', icon: '/icons/skills/openai.svg' },
+      { name: 'Amadeus API', icon: '/icons/skills/amadeus.svg' },
+      { name: 'Duffel API', icon: '/icons/skills/duffel.svg' },
+      { name: 'Git', icon: '/icons/skills/git.svg' },
+      { name: 'GitHub', icon: '/icons/skills/github.svg' },
     ],
   },
 ];
@@ -99,7 +100,19 @@ export default function Skills() {
               <div className={styles.skillsGrid}>
                 {category.items.map((skill) => (
                   <div key={skill.name} className={styles.skillCard}>
-                    <span className={styles.icon}>{skill.icon}</span>
+                    <span className={styles.iconWrap}>
+                      <Image
+                        src={skill.icon}
+                        alt=""
+                        width={40}
+                        height={40}
+                        className={
+                          skill.brand
+                            ? styles.iconBrand
+                            : styles.iconMono
+                        }
+                      />
+                    </span>
                     <span className={styles.skillName}>{skill.name}</span>
                   </div>
                 ))}
@@ -110,4 +123,4 @@ export default function Skills() {
       </div>
     </section>
   );
-} 
+}

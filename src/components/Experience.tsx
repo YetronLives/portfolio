@@ -16,13 +16,31 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     company: 'GoDaddy',
-    role: 'Software Development Engineer',
-    period: 'January 2025 - Present',
+    role: 'Software Development Engineer I · Workspace Provisiong (WOPR) / EPIC Team',
+    period: 'January 2026 – Present',
     description: [
-      'Implemented backend services in Go (GET, POST, PATCH), reducing ticket processing time by 70% and ensuring reliable data access for internal stakeholders',
-      'Increased service reliability by developing unit tests with Mockery, achieving 95%+ test coverage for Lambda business logic',
+      'Led the X-App-Key corporate header rollout across 11 Go service clients, coordinating with security and infrastructure teams for enterprise-wide adoption with zero production incidents',
+      'Built out the Microsoft Provisioning Service backend with 10+ optimized DynamoDB DAL methods for customer tenant management, all delivered test-first and held above 95% coverage with testify table-driven and suite-based patterns',
+      'Designed and shipped the ScopeVersion management system end to end — CRUD operations, database models, and RESTful endpoints powering enterprise permission control',
+      'Provisioned 3 core AWS infrastructure components with CDK — DynamoDB tables (eps-country, eps-country-state) and Parameter Store enforcement flags — and configured enforcement parameters across multiple services for corporate security compliance',
+      'Hardened reliability by improving Step Function retry logic and standardizing database attribute naming, eliminating recurring inconsistencies across services',
+      'Drove engineering quality across 11 repositories by refactoring test suites to consistent patterns and shared constants, materially improving maintainability and review velocity',
+      'Authored 4 major documentation updates and the X-App-Key implementation guide that clarified corporate (X-App-Key) vs business (appKey) headers, preventing confusion across engineering teams',
+      'Shipped 15+ merged PRs in the first four months with small, intent-driven commits and WPR ticket traceability — reinforcing a culture of incremental, well-tested delivery',
     ],
-    technologies: ['GoLang', 'AWS Lambda', 'CDK', 'C#', 'DynamoDB', 'Git', 'AWS DynamoDB', 'Claude Code'],
+    technologies: [
+      'Go',
+      'AWS CDK',
+      'DynamoDB',
+      'AWS Parameter Store',
+      'Step Functions',
+      'Microservices',
+      'REST API Design',
+      'testify',
+      'TDD',
+      'Git',
+      'GitHub',
+    ],
     logo: '/images/logos/godaddy.png'
   },
   {

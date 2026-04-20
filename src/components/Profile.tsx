@@ -57,9 +57,13 @@ export default function Profile() {
             </h1>
             <div className={styles.education}>
               <p className={styles.school}>
-                <span className={styles.schoolName}>Kennesaw State University</span>
-                <span className={styles.degree}>Software Engineering</span>
-                <span className={styles.minor}>Minor in Mathematics</span>
+                <span className={styles.schoolName}>Software Engineer at GoDaddy</span>
+                <span className={styles.degree}>
+                  Bachelor of Science in Software Engineering
+                </span>
+                <span className={styles.minor}>
+                  Minor in Mathematics · Kennesaw State University
+                </span>
               </p>
             </div>
             <p className={styles.subtitle}>
